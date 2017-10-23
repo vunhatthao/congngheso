@@ -1,5 +1,12 @@
 @import url("bootstrap.min.css");
 
+.container ul  {
+    list-style-type: none;
+}
+ 
+.container {
+    padding: 0;
+}
 .row {
 	padding: 0;
 }
@@ -11,6 +18,9 @@
 }
 .news-left {
 	padding: 0;
+}
+.right  {
+    padding-right: 0;
 }
 .row a {
 	color: black;
@@ -44,8 +54,12 @@ height: 360px;
 }
 .news-moiup {
 	padding: 0;
+    background-color: #0a314ee6;
+border: 1px solid red;
+border-radius: 8px;
 }
 .tinmoi {
+    margin-top: -10px;
 	    background-color: #0a314e;
 }
 
@@ -57,7 +71,7 @@ height: 360px;
     left: 0;
     background-color: #f90a15;
 }
-.title-moiup{
+.title{
 	height: 40px;
     padding-left: 20px;
     font-family: SFD-Bold;   
@@ -66,9 +80,10 @@ height: 360px;
     background: #102435;
     color: #fff;
 }
-.title-moiup h2 {
+.title h2 {
 	font-size: 25px;    
     padding-top: 6px;
+    font-weight: 600px;
 }
 .tinmoi ul{
 	padding: 0;
@@ -79,10 +94,87 @@ height: 360px;
 	width: 100%;
     height: 200px;
 
+
+}
+.box-tin {
+position: relative;
+margin-bottom: 1%;
+padding-left: 1%;
+padding-right: 1%;
 }
 
 
+.box-tin .info {
+    position: absolute;
+top: 22px;
+left: 0;
+}
+.box-tin .info  h1 {
+   font-size: 17px;
+color: white;
+padding-left: 1%;
+padding-right: 2%;
+}
+.box-tin .info h1:hover {
+    color: red;
+    
+}
+.image-card {
+    position: relative;
+}
+.title-video{
+    margin-bottom: 1%;
+}
+.video {
+    padding : 0px;
+background-color: #22455f;
+margin-top: 1%;
+border: 1px solid red;
+border-radius: 8px;
+}
+.icon-video {
+    width: 3%;
+margin-top: -6px;
+}
+
+#video-chinh video {
+width: 100%;
+height: 345px;
+}
+.video-slideleft {
+    padding: 0;
+}
+.slide-video {
+    padding: 0;
+}
+#video {
+   width: 100%;
+height: 86px;
+border-bottom: 1px solid #decfcf;
+}
+#video video {
+    height: 92%;
+float: left;
+width: 30%;
+margin-top: 1%;
+}
+#video span {
+    float: left;
+width: 65%;
+color: white;
+padding-left: 2%;
+padding-top: 2%;
+font-weight: 600;
+}
+.video-right {
+    height: 350px;
+}
+.newsleft {
+    padding-left: 0px;
+}
+
 #ads {
 	margin-top: 2%;
+
 }
 
