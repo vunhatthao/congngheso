@@ -10,6 +10,13 @@
     <script src="js/jquery.bxslider.js"></script>
     <link href="js/jquery.bxslider.css" rel="stylesheet" />
     <script src="js/jquery.bxslider.min.js"></script>
+
+ <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
+    <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
      <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -17,6 +24,17 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=473483082782693&version=v2.3";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 </head>
 <body >    
  <div class="container">
@@ -55,7 +73,7 @@
                             </div>
                         </div>
                     </div>
-            </div>
+            </div>            
             <!-- End tin top  -->
 
             <!-- Bảng tin tức mới up -->
@@ -110,11 +128,10 @@
                 
             </div>
 
-
+</div>
             <!-- End slide top -->
+        
 
-
-        </div>
           <div class="col-md-3 right banner">
             <div class="banner-abs">
                 <div id="ads">
@@ -141,9 +158,9 @@
                         <h2> <img class="icon-video" src="images/iconvdeo.png"> VIDEO </h2>
                     </div>
     <div class="col-md-7 video-right">
-       <li id="video-chinh">
+       <div id="video-chinh">
                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmissteenvietnam%2Fvideos%2F1447136995323539%2F&show_text=0&width=560"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-           </li>
+           </div>
         
     </div>
 <div class="col-md-5 video-slideleft">
@@ -171,16 +188,45 @@
                             <span class="tieude-video">
              Bitcoin lập đỉnh mới, "cha đẻ" của đồng tiền số có trong tay 5,9 tỷ USD
          </span>
-           </li>
-           
-
-       </ul>
-
-
-
+           </li>          
+      </ul>
     </div>
     </div>
 </div>
+ <!-- End Video -->
+
+  <!-- chuyên  mục tin -->
+<div class="box-tintuc">
+    <div class="col-md-9 left tintuc">
+        <div class="box-chuyenmuctin">
+
+             <video id="my-video" class="video-js" controls preload="auto" width="700" height="264"  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source scr="https://www.facebook.com/PageWSS/videos/1993860237526916/" type='video/mp4'>
+    <source scr="https://www.facebook.com/an.dangtrung/videos/953779028094363/" type='video/webm'>
+        <div class=”fb-video” data-href="https://www.facebook.com/an.dangtrung/videos/953779028094363/" data-width=”500″></div>    
+  </video>
+
+        </div>
+    </div>
+    <div class="col-md-3 right banner">
+            <div class="banner-abs">
+                <div id="ads">
+                    <a id="abs1">
+                                <img src="images/lien-he-qc-1.png" style="width: 100%;">
+                            </a>
+                </div>
+                <div id="ads">
+                    <a id="abs2">
+                                <img src="images/lien-he-qc-1.png" style="width: 100%;">
+                            </a>
+                </div>
+              
+        </div>
+         
+     </div>
+
+</div>
+
  </div>
  
 
