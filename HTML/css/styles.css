@@ -65,6 +65,7 @@ body a {
  
 .container {
     padding: 0;
+    margin-bottom: 12px !important;
 }
 .row {
 	padding: 0;
