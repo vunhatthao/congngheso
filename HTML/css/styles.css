@@ -321,10 +321,13 @@ padding: 0 !important;
     color: white;
 }
 
-.pagination a:hover:not(.active) {
+/*.pagination a:hover:not(.active) {
     background-color: #22455f;
     color: white;
     border-radius: 29px;
+}*/
+.pagination a:hover:not(.active) {
+    color: black;
 }
 #ads {
 	margin-top: 2%;
