@@ -45,6 +45,36 @@
     </script>
 
 
+
+
+<!-- đổi màu button số -->
+ <script >
+        var bt1 = document.getElementById("button1")
+        var bt2 = document.getElementById("button2")
+        var bt3 = document.getElementById("button3")
+        var bt4 = document.getElementById("button4")
+        var div = document.getElementById('pagination');
+ 
+bt1.onclick = function change_background () {
+    div.style.backgroud = "#337ab7";
+    div.style.color = "white";
+};
+bt2.onclick = function change_background () {
+    div.style.backgroud = "#a94442";
+    div.style.color = "black";
+};
+bt3.onclick = function change_background () {
+    div.style.backgroud = "red";
+    div.style.color = "white";
+};
+bt4.onclick = function change_background () {
+    div.style.backgroud = "black";
+    div.style.color = "white";
+};
+
+    </script>
+
+
 </head>
 <body >
 
@@ -308,9 +338,9 @@
                               <div class="date-tin"> <span>20/11/2017</span> </div>   
                               <span class="noidung-rutgon">Liệu bạn có đủ tập trung và tỉnh táo để không bị hoa mắt trước những hình vẽ đều tăm tắp nhưng khó nhìn này không? </span>                                
                                     </div>
-                                      </li>
+                                      </div>
 
-                                      <li class="col-md-12 news-tin">
+                  <div></div> class="col-md-12 news-tin">
                     <div class="col-md-4 img-tin" >
                         <a class="image-card" href="">
                             <img src="images/hinh.jpeg">
@@ -321,9 +351,9 @@
                               <div class="date-tin"> <span>20/11/2017</span> </div>   
                               <span class="noidung-rutgon">Liệu bạn có đủ tập trung và tỉnh táo để không bị hoa mắt trước những hình vẽ đều tăm tắp nhưng khó nhìn này không? </span>                                
                                     </div>
-                                      </li>
+                                      </div>
 
-                                      <li class="col-md-12 news-tin">
+                                      <div class="col-md-12 news-tin">
                     <div class="col-md-4 img-tin" >
                         <a class="image-card" href="">
                             <img src="images/hinh.jpeg">
@@ -334,8 +364,8 @@
                               <div class="date-tin"> <span>20/11/2017</span> </div>   
                               <span class="noidung-rutgon">Liệu bạn có đủ tập trung và tỉnh táo để không bị hoa mắt trước những hình vẽ đều tăm tắp nhưng khó nhìn này không? </span>                                
                                     </div>
-                                      </li>
-                                      <li class="col-md-12 news-tin">
+                                      </div>
+                                      <div class="col-md-12 news-tin">
                     <div class="col-md-4 img-tin" >
                         <a class="image-card" href="">
                             <img src="images/hinh.jpeg">
@@ -346,8 +376,8 @@
                               <div class="date-tin"> <span>20/11/2017</span> </div>   
                               <span class="noidung-rutgon">Liệu bạn có đủ tập trung và tỉnh táo để không bị hoa mắt trước những hình vẽ đều tăm tắp nhưng khó nhìn này không? </span>                                
                                     </div>
-                                      </li>
-                                      <li class="col-md-12 news-tin">
+                                      </div>
+                                      <div class="col-md-12 news-tin">
                     <div class="col-md-4 img-tin" >
                         <a class="image-card" href="">
                             <img src="images/hinh.jpeg">
@@ -358,15 +388,15 @@
                               <div class="date-tin"> <span>20/11/2017</span> </div>   
                               <span class="noidung-rutgon">Liệu bạn có đủ tập trung và tỉnh táo để không bị hoa mắt trước những hình vẽ đều tăm tắp nhưng khó nhìn này không? </span>                                
                                     </div>
-                                      </li>
+                                      </div>
                                     </div> 
-   <div class="pagination">
+   <div class="pagination" id="pagination">
   <a href="#">&laquo;</a>
-  <a href="#">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">4</a>  
-  <a href="#">&raquo;</a>
+  <a id="button1" href="#">1</a>
+  <a id="button2"  href="#">2</a>
+  <a id="button3" href="#">3</a>
+  <a id="button4"  href="#">4</a>  
+  <a   href="#">&raquo;</a>
 </div>      
   </div> 
 
