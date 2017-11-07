@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+ 
     <title>Exponet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta charset="UTF-8">
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <div id="fb-root"></div>
+
+
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -26,7 +29,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
  <script src="http://vjs.zencdn.net/6.2.8/video.js"></script>
-    <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+ <link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
   <!-- If you'd like to support IE8 -->  
 
 <script type="text/javascript">
@@ -404,7 +407,7 @@ bt4.onclick = function change_background () {
     
     <div class="col-md-3 right banner banner-cuon"> <!-- banner này sẽ chạy theo màn hình khi kéo thanh công cụ -->
             <div class="fb-page" data-href="https://www.facebook.com/congnghemoigio/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/congnghemoigio/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/congnghemoigio/">Công Nghệ &amp; Đời Sống</a></blockquote></div>
-            <div class="banner-abs">                
+            <div class="banner-abs" id="bannerRight">                
                     <a id="abs1">
                                 <img src="images/NOEL.jpg" style="width: 100%;">
                             </a>
@@ -502,13 +505,52 @@ bt4.onclick = function change_background () {
 </footer>
 
 <!-- end footer -->
+    <script type="text/javascript">
+
+        var topw = 0;
+        function checkScroll() {
 
 
+            if (document.getElementById('bannerRight').getBoundingClientRect().top <= 0) { //
+                // alert(topw)
+                $('#bannerRight').addClass('qc');
+                if (document.getElementById('bannerRight').getBoundingClientRect().top == 0) {
+                    topw = window.pageYOffset;
+                }
+
+            } else if (window.pageYOffset <= topw) {
+                $('#bannerRight').removeClass('qc');
+            }
+
+            setTimeout(function () {
+                checkScroll();
+            }, 500)
+        }
 
 
+        $(document).bind("scroll", function () {
+            if (document.getElementById('bannerRight').getBoundingClientRect().top <= 0) { //
+                // alert(topw)
+                $('#bannerRight').addClass('qc');
+                if (topw == 0) {
+                    topw = window.pageYOffset;
+                }
+
+            } else if (window.pageYOffset <= topw) {
+                $('#bannerRight').removeClass('qc');
+            }
+        });
 
 
+    </script>
 
-
+    <style type="text/css">
+        .qc {
+            position: fixed;
+            width: 250px;
+            height: 450px;
+            top: 1%;
+        }
+    </style>
 </body>
 </html>
